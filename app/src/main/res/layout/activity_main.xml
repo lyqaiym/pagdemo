@@ -18,7 +18,7 @@
     <com.example.pagdemo.PagConstraintLayout
         android:id="@+id/cl_test"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,8 +26,30 @@
 
         <org.libpag.PAGView
             android:id="@+id/pv_test"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.example.pagdemo.PagConstraintLayout>
+
+    <com.example.pagdemo.PagConstraintLayout
+        android:id="@+id/cl_test2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_test">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lav_test"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
